@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Oh My Ice-Cream</title>
+
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+    <!-- END Icons -->
+
+    <!-- Stylesheets -->
+    <!-- Page JS Plugins CSS -->
+    <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
+    <link rel="stylesheet" href="assets/css/Add.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
+
+    <!-- Fonts and OneUI framework -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+    <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
+    <!-- END Stylesheets -->
+</head>
+
+<body>
+    <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
+        
+        <nav id="sidebar" class="bg-flat-darker" aria-label="Main Navigation" data-simplebar="init">
+            <div class="simplebar-track vertical" style="visibility: hidden;">
+                <div class="simplebar-scrollbar"></div>
+            </div>
+            <div class="simplebar-track horizontal" style="visibility: hidden;">
+                <div class="simplebar-scrollbar"></div>
+            </div>
+            <div class="simplebar-scroll-content" style="padding-right: 17px; margin-bottom: -34px;">
+                <div class="simplebar-content" style="padding-bottom: 17px; margin-right: -17px;">
+                    <!-- Side Header -->
+                    <div class="content-header bg-flat-dark">
+                        <!-- Logo -->
+                        <a class="font-w600 text-dual" href="#">
+                            <span class="glyphicon glyphicon-ice-lolly"></span>
+                            <span class="smini-hide">
+                                <span class="font-w700 font-size-h5">Ice Cream</span>
+                            </span>
+                        </a>
+                        <!-- END Logo -->
+
+                        <!-- Options -->
+                        <div>
+                            <!-- Color Variations -->
+                            <div class="dropdown d-inline-block ml-3">
+                                <a class="text-dual font-size-sm" id="sidebar-themes-dropdown" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" href="#">
+                                    <i class="si si-drop"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right font-size-sm smini-hide border-0"
+                                    aria-labelledby="sidebar-themes-dropdown">
+                                    <!-- Color Themes -->
+                                    <!-- Layout API, functionality initialized in Template._uiHandleTheme() -->
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between active"
+                                        data-toggle="theme" data-theme="default" href="#">
+                                        <span>Default</span>
+                                        <i class="fa fa-circle text-default"></i>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" href="#">
+                                        <span>Amethyst</span>
+                                        <i class="fa fa-circle text-amethyst"></i>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        data-toggle="theme" data-theme="assets/css/themes/city.min.css" href="#">
+                                        <span>City</span>
+                                        <i class="fa fa-circle text-city"></i>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        data-toggle="theme" data-theme="assets/css/themes/flat.min.css" href="#">
+                                        <span>Flat</span>
+                                        <i class="fa fa-circle text-flat"></i>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        data-toggle="theme" data-theme="assets/css/themes/modern.min.css" href="#">
+                                        <span>Modern</span>
+                                        <i class="fa fa-circle text-modern"></i>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                        data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" href="#">
+                                        <span>Smooth</span>
+                                        <i class="fa fa-circle text-smooth"></i>
+                                    </a>
+                                    <!-- END Color Themes -->
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- Sidebar Styles -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <a class="dropdown-item" data-toggle="layout" data-action="sidebar_style_light"
+                                        href="#">
+                                        <span>Sidebar Light</span>
+                                    </a>
+                                    <a class="dropdown-item" data-toggle="layout" data-action="sidebar_style_dark"
+                                        href="#">
+                                        <span>Sidebar Dark</span>
+                                    </a>
+                                    <!-- Sidebar Styles -->
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!-- Header Styles -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <a class="dropdown-item" data-toggle="layout" data-action="header_style_light"
+                                        href="#">
+                                        <span>Header Light</span>
+                                    </a>
+                                    <a class="dropdown-item" data-toggle="layout" data-action="header_style_dark"
+                                        href="#">
+                                        <span>Header Dark</span>
+                                    </a>
+                                    <!-- Header Styles -->
+                                </div>
+                            </div>
+                            <!-- END Themes -->
+
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="d-lg-none text-dual ml-3" data-toggle="layout" data-action="sidebar_close"
+                                href="javascript:void(0)">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <!-- END Close Sidebar -->
+                        </div>
+                        <!-- END Options -->
+                    </div>
+                    <!-- END Side Header -->
+
+                    <!-- Side Navigation -->
+                    <div class="content-side content-side-full bg-flat-darker">
+                            <ul class="nav-main">
+    
+                                <!-- home-->
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link " href="Layout.html">
+                                        <i class="si si-home"></i>
+                                        <span class="nav-main-link-name">&nbsp;&nbsp;Trang chủ</span>
+                                    </a>
+    
+                                </li>
+                                <!--Add ice-->
+                                <li class="nav-main-item">
+                                        <a class="nav-main-link " href="AddIceCream.html">
+                                            <i class="si si-pencil"></i>
+                                            <span class="nav-main-link-name">&nbsp;&nbsp;Chia sẻ cách làm kem</span>
+                                        </a>
+        
+                                </li>    
+    
+                                <!-- list ice-->
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu"
+                                        aria-haspopup="true" aria-expanded="false" href="#">
+                                        <i class="si si-list"></i>
+                                        <span class="nav-main-link-name">&nbsp;&nbsp;Danh sách các loại kem</span>
+                                    </a>
+                                    <ul class="nav-main-submenu">
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="KemChuoi.html">
+                                                <span class="nav-main-link-name">Kem Chuối</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="KemTraXanh.html">
+                                                <span class="nav-main-link-name">Kem Trà Xanh</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="KemDua.html">
+                                                <span class="nav-main-link-name">Kem Dừa</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-main-item">
+                                            <a class="nav-main-link" href="KemHoaQua.html">
+                                                <span class="nav-main-link-name">Kem Hoa Quả</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--contact-->
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link " data-toggle="submenu" aria-haspopup="true"
+                                        aria-expanded="false" href="Contact.html">
+                                        <i class="fa fa-phone"></i>
+                                        <span class="nav-main-link-name">&nbsp;&nbsp; Contact Us</span>
+                                    </a>
+    
+                                </li>
+                                <!-- About-->
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link " data-toggle="submenu" aria-haspopup="true"
+                                        aria-expanded="false" href="About-us.html">
+                                        <i class="nav-main-link-icon si si-note"></i>
+                                        <span class="nav-main-link-name">About Us</span>
+                                    </a>
+    
+                                </li>
+    
+                            </ul>
+                        </div>
+                    <!-- END Side Navigation -->
+                </div>
+            </div>
+        </nav>
+        <!-- END Sidebar -->
+
+        <!-- Header -->
+        <header id="page-header">
+            <!-- Header Content -->
+            <div class="content-header">
+                <!-- Left Section -->
+                <div class="d-flex align-items-center">
+                    <!-- Toggle Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout"
+                        data-action="sidebar_toggle">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- END Toggle Sidebar -->
+
+                    <!-- Toggle Mini Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block" data-toggle="layout"
+                        data-action="sidebar_mini_toggle">
+                        <i class="fa fa-fw fa-ellipsis-v"></i>
+                    </button>
+                    <!-- END Toggle Mini Sidebar -->
+
+                   
+
+                    <!-- Open Search Section (visible on smaller screens) -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-dual d-sm-none" data-toggle="layout"
+                        data-action="header_search_on">
+                        <i class="si si-magnifier"></i>
+                    </button>
+                    <!-- END Open Search Section -->
+
+                    <!-- Search Form (visible on larger screens) -->
+                    <form class="d-none d-sm-inline-block" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-alt" placeholder="Search.."
+                                id="page-header-search-input2" name="page-header-search-input2">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-body border-0">
+                                    <i class="si si-magnifier"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END Search Form -->
+                </div>
+                <!-- END Left Section -->
+
+                <!-- Right Section -->
+                <div class="d-flex align-items-center">
+                    <!-- User Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded" src="assets/media/avatars/avatar10.jpg" alt="Header Avatar"
+                                style="width: 18px;">
+                            <span class="d-none d-sm-inline-block ml-1">Adam</span>
+                            <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="page-header-user-dropdown">
+                            <div class="p-3 text-center bg-primary">
+                                <img class="img-avatar img-avatar48 img-avatar-thumb"
+                                    src="assets/media/avatars/avatar10.jpg" alt="">
+                            </div>
+                            <div class="p-2">
+                                <h5 class="dropdown-header text-uppercase">User Options</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="be_pages_generic_inbox.html">
+                                    <span>Inbox</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-primary">3</span>
+                                        <i class="si si-envelope-open ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="be_pages_generic_profile.html">
+                                    <span>Profile</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-success">1</span>
+                                        <i class="si si-user ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Settings</span>
+                                    <i class="si si-settings"></i>
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <h5 class="dropdown-header text-uppercase">Actions</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="op_auth_lock.html">
+                                    <span>Lock Account</span>
+                                    <i class="si si-lock ml-1"></i>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="op_auth_signin.html">
+                                    <span>Log Out</span>
+                                    <i class="si si-logout ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END User Dropdown -->
+
+                    <!-- Notifications Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="si si-bell"></i>
+                            <span class="badge badge-primary badge-pill">6</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-2 bg-primary text-center">
+                                <h5 class="dropdown-header text-uppercase text-white">Notifications</h5>
+                            </div>
+                            <ul class="nav-items mb-0">
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">15 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">1 new sale, keep it up</div>
+                                            <small class="text-muted">22 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-times-circle text-danger"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">Update failed, restart server</div>
+                                            <small class="text-muted">26 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">2 new sales, keep it up</div>
+                                            <small class="text-muted">33 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-user-plus text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new subscriber</div>
+                                            <small class="text-muted">41 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">42 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="p-2 border-top">
+                                <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-arrow-down mr-1"></i> Load More..
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Notifications Dropdown -->
+
+                    
+                </div>
+                <!-- END Right Section -->
+            </div>
+            <!-- END Header Content -->
+
+            <!-- Header Search -->
+            <div id="page-header-search" class="overlay-header bg-white">
+                <div class="content-header">
+                    <form class="w-100" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <button type="button" class="btn btn-danger" data-toggle="layout"
+                                    data-action="header_search_off">
+                                    <i class="fa fa-fw fa-times-circle"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search or hit ESC.."
+                                id="page-header-search-input" name="page-header-search-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END Header Search -->
+
+            <!-- Header Loader -->
+            <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+            <div id="page-header-loader" class="overlay-header bg-white">
+                <div class="content-header">
+                    <div class="w-100 text-center">
+                        <i class="fa fa-fw fa-circle-notch fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END Header Loader -->
+        </header>
+        <!-- END Header -->
+
+        <!-- Main Container -->
+        <main id="main-container">
+
+            <!-- Hero -->
+
+            <!-- END Hero -->
+
+            <!-- Page Content -->
+            <!-- Slick Slider (.js-slider class is initialized in Helpers.slick()) -->
+            <!-- For more info and examples you can check out http://kenwheeler.github.io/slick/ -->
+            <!--
+                    Extra Classes:
+
+                    'slick-nav-white'    for white navigation buttons
+                    'slick-nav-black'    for black navigation buttons
+                    'slick-nav-hover'    for navigation buttons visible on hover
+
+                    'slick-dotted-white' for white dots
+                    'slick-dotted-inner' for overlaying dots inside the slides
+
+                -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-7 col-xl-9">
+                        <!-- Message List -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="block-header">
+                                        <h3 class="block-title">Mô tả</h3>
+                                        <div class="block-options">
+                                            <button type="button" class="btn-block-option" data-toggle="block-option"
+                                                data-action="fullscreen_toggle"><i
+                                                    class="si si-size-fullscreen"></i></button>
+                                            <button type="button" class="btn-block-option" data-toggle="block-option"
+                                                data-action="pinned_toggle">
+                                                <i class="si si-pin"></i>
+                                            </button>
+                                            <button type="button" class="btn-block-option" data-toggle="block-option"
+                                                data-action="state_toggle" data-action-mode="demo">
+                                                <i class="si si-refresh"></i>
+                                            </button>
+                                            <button type="button" class="btn-block-option" data-toggle="block-option"
+                                                data-action="content_toggle"><i class="si si-arrow-up"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="block-content text-center">
+                                        <div class="text-center" style="font-weight: bold;font-size:20px">Kem Dâu Tây</div>
+                                        <div class="js-rating" data-score="3"></div>
+
+                                        <p><label style="font-size: 20px">Người đăng</label>: Thu Nga 
+                                        </br>
+                                            "Từ những trái dâu tay đỏ mọng. Chúng ta sẽ có một món kém vừa ngon vừa bổ dưỡng"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Slider with autoplay and white inner dots -->
+                                <div class="block">
+                                    <div class="js-slider slick-dotted-inner slick-dotted-white" data-dots="true"
+                                        data-autoplay="true" data-autoplay-speed="1000">
+                                        <div>
+                                            <img class="img-fluid" src="assets/media/photos/KemDauTay.jpg" alt="Auto" >
+                                        </div>
+                                        <div>
+                                            <img class="img-fluid" src="assets/media/photos/KemDauTay_1.jpg" alt="Auto" >
+                                        </div>
+                                        <div>
+                                            <img class="img-fluid" src="assets/media/photos/KemDauTay_2.jpg" alt="Auto" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END Slider with autoplay and white inner dots -->
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block-header bg-default-lighter">
+                                    <h3 class="block-title">Nguyên liệu</h3>
+                                    
+                                </div>
+                                <div class="block-content ">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group"><span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;whipping cream 200ml</label></span></div><br>
+                                            <div class="form-group"><span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;Dâu tây 200gram</label></span></div><br>
+                                            <div class="form-group"><span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp; 2 thìa Sữa đặc có đường</label></span></div><br>
+                                            <div class="form-group"><span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;200ml Sữa tươi không đường</label></span></div><br>
+                                            
+                                                        
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;
+                                                            1 lòng đỏ trứng gà</label></span>
+                                            </div><br>
+                                            <div class="form-group">
+                                                <span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;
+                                                            150 gram đường</label></span>
+                                            </div><br>
+                                            <div class="form-group">
+                                                <span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;
+                                                            1/3 thìa cafe muối</label></span>
+                                            </div><br>
+                                            <div class="form-group">
+                                                <span><i class="si si-plus fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;
+                                                            1/2 thìa cafe nước cốt chanh tươi</label></span>
+                                            </div><br>
+                                            <div class="form-group">
+                                                <span><i class="fa fa-plus-circle fa-2x"
+                                                        style="vertical-align: middle"></i><label>&nbsp;&nbsp;
+                                                        Thêm tất cả nguyên liệu vào danh sách</label></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <h2 style="margin-bottom: 0.675rem"> Giảm Giá</h2>
+                                                        <label style="font-size: 12px">Tất cả nguyên liệu trong bảng</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group" style="padding-top: 18px">
+                                                        <button type="button" class="btn btn-outline-info">
+                                                            <i class="fa fa-dollar-sign"></i>&nbsp; Mua
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block-header bg-default-lighter">
+                                    <h3 class="block-title"> Cách chế biến</h3>
+                                    <div class="block-options">
+                                        <span><a href="#">Thêm ghi chú</a>&nbsp;&nbsp;<i class="far fa-edit fa-2x"
+                                                style="vertical-align: middle"></i></span>
+                                        ---
+                                        <span><a href="#">In</a>&nbsp;&nbsp;<i class="si si-printer fa-2x"
+                                                style="vertical-align: middle"></i></span>
+                                    </div>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12">
+                                            <div class="form-group"><span><label style="font-size: 25px">1.</label>
+                                                Dâu tây sau khi mua về bạn cần rửa sạch cho hết bụi bẩn. Tiếp đến, bỏ đi phần cuống bám vào quả và bổ dâu làm 4 hoặc 6 tuỳ ý bạn. Bổ dâu tây xong, đem ½ lượng đường + phần nước cốt chanh đã chuẩn bị rồi trộn đều sau đó để cho dâu ngấm đường trong ngăn mát tủ lạnh khoảng 30 phút. Hết thời gian trên, bạn lấy dâu ra ngoài và đem nghiền nhuyễn hoặc xay cho nhuyễn bằng máy xay sinh tố. Lưu ý xay càng nhuyễn thì món kem của bạn càng ngon.
+                                                </span></div><br>
+                                            <div class="form-group"><span><label style="font-size: 25px">2.</label>
+                                                Đập phần trứng gà ra bát. Tiếp đến, cho ½ lượng đường còn lại + muối ăn và trộn cho thật đều. Ở bước này bạn có thể dùng đến máy đánh trứng để tạo được độ bông kem, mịn và ngon hơn. Làm xong, bạn cho phần sữa tươi + whipping cream vào trộn cho cho thật đều. Khi hỗn hợp này được, bạn đổ tiếp phần dâu đã xay trước đó vào và cũng lại đánh thật đều một lần nữa để hỗn hợp được quyện hết với nhau.
+                                                </span></div>
+                                            <br>
+                                            <div class="form-group"><span><label style="font-size: 25px">3.</label>
+                                                Ở bước cuối cùng này, bạn chỉ cần cho hỗn hợp kem đã tạo vào khuôn rồi bỏ lên ngăn đá tủ lạnh. Thời gian chờ để thưởng thức món kem dâu tây này sẽ rơi vào khoảng 5 tiếng. Cũng như các món kem khác, để kem dâu tây không bị đá dăm thì cứ khoảng 1 tiếng bạn lại lấy kem ra và trộn cho thật đều.
+                                                </span></div><br>
+                                            
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xl-3">
+                            <!-- Toggle Inbox Side Navigation -->
+                            <div class="d-md-none push">
+                                <!-- Class Toggle, functionality initialized in Helpers.coreToggleClass() -->
+                                <button type="button" class="btn btn-block btn-primary" data-toggle="class-toggle"
+                                    data-target="#one-inbox-side-nav" data-class="d-none">
+                                    Thông tin
+                                </button>
+                            </div>
+                            <!-- END Toggle Inbox Side Navigation -->
+        
+                            <!-- Inbox Side Navigation -->
+                            <div id="one-inbox-side-nav" class="d-none d-md-block push">
+                                
+        
+                                <!-- Bảng đóng góp -->
+                                <div class="block">
+                                    <div class="block-header block-header-default">
+                                        <h3 class="block-title">Bảng đóng góp</h3>
+                                        <div class="block-options">
+                                            <button type="button" class="btn-block-option">
+                                                <i class="si si-settings"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-items font-size-sm">
+                                            <li>
+                                                <a class="media py-2" href="javascript:void(0)">
+                                                    <div class="mr-3 ml-2 overlay-container overlay-bottom">
+                                                        <img class="img-avatar img-avatar48"
+                                                            src="assets/media/avatars/avatar3.jpg" alt="">
+                                                        <span
+                                                            class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Thu Nguyễn</div>
+                                                        <div class="font-w400 text-muted">Số bài đăng:&nbsp;<span class="font-w400 text-muted">6</span></div>
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="javascript:void(0)">
+                                                    <div class="mr-3 ml-2 overlay-container overlay-bottom">
+                                                        <img class="img-avatar img-avatar48"
+                                                            src="assets/media/avatars/avatar9.jpg" alt="">
+                                                        <span
+                                                            class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                            <div class="font-w600">Annie Thủy</div>
+                                                            <div class="font-w400 text-muted">Số bài đăng:&nbsp;<span class="font-w400 text-muted">4</span></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="javascript:void(0)">
+                                                    <div class="mr-3 ml-2 overlay-container overlay-bottom">
+                                                        <img class="img-avatar img-avatar48"
+                                                            src="assets/media/avatars/avatar8.jpg" alt="">
+                                                        <span
+                                                            class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                            <div class="font-w600">Diễm Kiều</div>
+                                                            <div class="font-w400 text-muted">Số bài đăng:&nbsp;<span class="font-w400 text-muted">3</span></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="javascript:void(0)">
+                                                    <div class="mr-3 ml-2 overlay-container overlay-bottom">
+                                                        <img class="img-avatar img-avatar48"
+                                                            src="assets/media/avatars/avatar10.jpg" alt="">
+                                                        <span
+                                                            class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                            <div class="font-w600">Anna Lei</div>
+                                                            <div class="font-w400 text-muted">Số bài đăng:&nbsp;<span class="font-w400 text-muted">2</span></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="javascript:void(0)">
+                                                    <div class="mr-3 ml-2 overlay-container overlay-bottom">
+                                                        <img class="img-avatar img-avatar48"
+                                                            src="assets/media/avatars/avatar12.jpg" alt="">
+                                                        <span
+                                                            class="overlay-item item item-tiny item-circle border border-2x border-white bg-danger"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                            <div class="font-w600">Huệ Lâm</div>
+                                                            <div class="font-w400 text-muted">Số bài đăng:&nbsp;<span class="font-w400 text-muted">1</span></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END Bảng đóng góp -->
+        
+                                <!-- Account -->
+                                <div class="block">
+                                    <div class="block-header block-header-default">
+                                        <h3 class="block-title">Tài Khoản</h3>
+                                        <div class="block-options">
+                                            <button type="button" class="btn-block-option">
+                                                <i class="si si-settings"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="block-content">
+                                        <!-- Easy Pie Chart (.js-pie-chart class is initialized in Helpers.easyPieChart()) -->
+                                        <!-- For more info and examples you can check out http://rendro.github.io/easy-pie-chart/ -->
+                                        <!-- Pie Chart Container -->
+                                        <div class="js-pie-chart pie-chart push js-pie-chart-enabled" data-percent="35"
+                                            data-line-width="3" data-size="100" data-bar-color="#abe37d"
+                                            data-track-color="#eeeeee" data-scale-color="#dddddd">
+                                            <span>
+                                                <img class="img-avatar" src="assets/media/avatars/avatar16.jpg" alt="">
+                                            </span>
+                                            <canvas height="100" width="100"></canvas></div>
+                                        <a class="block block-bordered block-rounded block-link-shadow"
+                                            href="javascript:void(0)">
+                                            <div class="block-content block-content-full text-center">
+                                                <div class="push">
+                                                    <i class="si si-like fa-2x text-success"></i>
+                                                </div>
+                                                <div class="font-size-h2 font-w700">
+                                                    <span class="text-muted">+</span> 6
+                                                </div>
+                                                <div class="font-size-sm text-muted text-uppercase">Theo dõi</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- END Account -->
+                            </div>
+                            <!-- END Inbox Side Navigation -->
+                        </div>
+                </div>
+                <!-- END Image Sliders -->
+            </div>
+            <!-- END Page Content -->
+
+        </main>
+        <!-- END Main Container -->
+
+        <!-- Footer -->
+        <footer id="page-footer" class="bg-body-light">
+                <div class="content py-3">
+                    <div class="row font-size-sm">
+                        <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
+                            Xây dựng <i class="fa fa-heart text-danger"></i> bởi <a class="font-w600"
+                                href="https://1.envato.market/ydb" target="_blank">Team7</a>
+                        </div>
+                        <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
+                            <a class="font-w600" href="#" target="_blank">IceCream</a> &copy; <span
+                                data-toggle="year-copy"></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- END Footer -->
+
+       
+    </div>
+    <!-- END Page Container -->
+
+    <!--
+            OneUI JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+    <script src="assets/js/oneui.core.min.js"></script>
+
+    <!--
+            OneUI JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+    <script src="assets/js/oneui.app.min.js"></script>
+
+    <script src="assets/js/plugins/raty-js/jquery.raty.js"></script>
+
+    <!-- Page JS Code -->
+    <script src="assets/js/pages/be_comp_rating.min.js"></script>
+
+
+    <!-- Page JS Plugins -->
+    <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+
+    <!-- Page JS Helpers (Slick Slider Plugin) -->
+    <script>jQuery(function () { One.helpers('slick'); });</script>
+</body>
+
+</html>

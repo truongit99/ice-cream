@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(255,255,255,0) !important;
+}
+
+.prepTime{
+    margin-left:16px;
+}
+
+.prepTime{
+    clear: both;
+    float: left;
+    margin: 14px 5% 1rem 12px;
+    width: 90%;
+}
+
+ol, ul{
+    list-style: none;
+    padding:0;
+}
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.ar_recipe
+{
+    font-size: 1rem;
+}
+
+body{
+    color: #2d2d2d;
+    font-family: "Source Sans Pro",Arial;
+}
+.dropzone.dz-clickable{cursor:pointer}
+
+.dropzone{background:white;padding:20px 20px;min-height:200px;background-color:#f9f9f9;border:.125rem dashed #e1e1e1;border-radius:.3rem}
+
+.dropzone,.dropzone *{box-sizing:border-box}
+
+.dropzone.dz-clickable{cursor:pointer}
+
+.dropzone.dz-clickable{cursor:pointer}.dropzone.dz-clickable *{cursor:default}.dropzone.dz-clickable .dz-message,.dropzone.dz-clickable .dz-message *{cursor:pointer}
+
+
+

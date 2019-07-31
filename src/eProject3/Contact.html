@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Oh My Ice-Cream</title>
+
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+    <!-- END Icons -->
+
+    <!-- END Icons -->
+
+    <!-- Stylesheets -->
+    <!-- Page JS Plugins CSS -->
+    <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
+    <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
+
+    <!-- Stylesheets -->
+    <!-- Fonts and OneUI framework -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+    <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+
+    
+</head>
+
+<body>
+    
+    <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
+        
+        <nav id="sidebar" class="bg-flat-darker" aria-label="Main Navigation">
+            <!-- Side Header -->
+            <div class="content-header bg-flat-dark">
+                <!-- Logo -->
+                <a class="font-w600 text-dual" href="#">
+                    <span class="glyphicon glyphicon-ice-lolly"></span>
+                    <span class="smini-hide">
+                        <span class="font-w700 font-size-h5">Ice Cream</span>
+                    </span>
+                </a>
+                <!-- END Logo -->
+
+                <!-- Options -->
+                <div>
+                    <!-- Color Variations -->
+                    <div class="dropdown d-inline-block ml-3">
+                        <a class="text-dual font-size-sm" id="sidebar-themes-dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">
+                            <i class="si si-drop"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right font-size-sm smini-hide border-0"
+                            aria-labelledby="sidebar-themes-dropdown">
+                            <!-- Color Themes -->
+                            <!-- Layout API, functionality initialized in Template._uiHandleTheme() -->
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="default" href="#">
+                                <span>Default</span>
+                                <i class="fa fa-circle text-default"></i>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" href="#">
+                                <span>Amethyst</span>
+                                <i class="fa fa-circle text-amethyst"></i>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="assets/css/themes/city.min.css" href="#">
+                                <span>City</span>
+                                <i class="fa fa-circle text-city"></i>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="assets/css/themes/flat.min.css" href="#">
+                                <span>Flat</span>
+                                <i class="fa fa-circle text-flat"></i>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="assets/css/themes/modern.min.css" href="#">
+                                <span>Modern</span>
+                                <i class="fa fa-circle text-modern"></i>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" href="#">
+                                <span>Smooth</span>
+                                <i class="fa fa-circle text-smooth"></i>
+                            </a>
+                            <!-- END Color Themes -->
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- Sidebar Styles -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="dropdown-item" data-toggle="layout" data-action="sidebar_style_light" href="#">
+                                <span>Sidebar Light</span>
+                            </a>
+                            <a class="dropdown-item" data-toggle="layout" data-action="sidebar_style_dark" href="#">
+                                <span>Sidebar Dark</span>
+                            </a>
+                            <!-- Sidebar Styles -->
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- Header Styles -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="dropdown-item" data-toggle="layout" data-action="header_style_light" href="#">
+                                <span>Header Light</span>
+                            </a>
+                            <a class="dropdown-item" data-toggle="layout" data-action="header_style_dark" href="#">
+                                <span>Header Dark</span>
+                            </a>
+                            <!-- Header Styles -->
+                        </div>
+                    </div>
+                    <!-- END Themes -->
+
+                    <!-- Close Sidebar, Visible only on mobile screens -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <a class="d-lg-none text-dual ml-3" data-toggle="layout" data-action="sidebar_close"
+                        href="javascript:void(0)">
+                        <i class="fa fa-times"></i>
+                    </a>
+                    <!-- END Close Sidebar -->
+                </div>
+                <!-- END Options -->
+            </div>
+            <!-- END Side Header -->
+
+            <!-- Side Navigation -->
+            <div class="content-side content-side-full bg-flat-darker">
+                    <ul class="nav-main">
+
+                        <!-- home-->
+                        <li class="nav-main-item">
+                            <a class="nav-main-link " href="Layout.html">
+                                <i class="si si-home"></i>
+                                <span class="nav-main-link-name">&nbsp;&nbsp;Trang chủ</span>
+                            </a>
+
+                        </li>
+                        <!--Add ice-->
+                        <li class="nav-main-item">
+                                <a class="nav-main-link " href="AddIceCream.html">
+                                    <i class="si si-pencil"></i>
+                                    <span class="nav-main-link-name">&nbsp;&nbsp;Chia sẻ cách làm kem</span>
+                                </a>
+
+                        </li>    
+
+                        <!-- list ice-->
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu"
+                                aria-haspopup="true" aria-expanded="false" href="#">
+                                <i class="si si-list"></i>
+                                <span class="nav-main-link-name">&nbsp;&nbsp;Danh sách các loại kem</span>
+                            </a>
+                            <ul class="nav-main-submenu">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="KemChuoi.html">
+                                        <span class="nav-main-link-name">Kem Chuối</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="KemTraXanh.html">
+                                        <span class="nav-main-link-name">Kem Trà Xanh</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="KemDua.html">
+                                        <span class="nav-main-link-name">Kem Dừa</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="KemHoaQua.html">
+                                        <span class="nav-main-link-name">Kem Hoa Quả</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--contact-->
+                        <li class="nav-main-item">
+                            <a class="nav-main-link " data-toggle="submenu" aria-haspopup="true"
+                                aria-expanded="false" href="Contact.html">
+                                <i class="fa fa-phone"></i>
+                                <span class="nav-main-link-name">&nbsp;&nbsp; Contact Us</span>
+                            </a>
+
+                        </li>
+                        <!-- About-->
+                        <li class="nav-main-item">
+                            <a class="nav-main-link " data-toggle="submenu" aria-haspopup="true"
+                                aria-expanded="false" href="About-us.html">
+                                <i class="nav-main-link-icon si si-note"></i>
+                                <span class="nav-main-link-name">About Us</span>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+            <!-- END Side Navigation -->
+        </nav>
+        <!-- END Sidebar -->
+
+        <!-- Header -->
+        <header id="page-header">
+            <!-- Header Content -->
+            <div class="content-header ">
+                <!-- Left Section -->
+                <div class="d-flex align-items-center">
+                    <!-- Toggle Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none" data-toggle="layout"
+                        data-action="sidebar_toggle">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- END Toggle Sidebar -->
+
+                    <!-- Toggle Mini Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block" data-toggle="layout"
+                        data-action="sidebar_mini_toggle">
+                        <i class="fa fa-fw fa-ellipsis-v"></i>
+                    </button>
+                    <!-- END Toggle Mini Sidebar -->
+
+                    
+
+                    <!-- Open Search Section (visible on smaller screens) -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-dual d-sm-none" data-toggle="layout"
+                        data-action="header_search_on">
+                        <i class="si si-magnifier"></i>
+                    </button>
+                    <!-- END Open Search Section -->
+
+                    <!-- Search Form (visible on larger screens) -->
+                    <form class="d-none d-sm-inline-block" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-alt" placeholder="Search.."
+                                id="page-header-search-input2" name="page-header-search-input2">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-body border-0">
+                                    <i class="si si-magnifier"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END Search Form -->
+                </div>
+                <!-- END Left Section -->
+
+                <!-- Right Section -->
+                <div class="d-flex align-items-center">
+                    <!-- User Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded" src="assets/media/avatars/avatar10.jpg" alt="Header Avatar"
+                                style="width: 18px;">
+                            <span class="d-none d-sm-inline-block ml-1">User</span>
+                            <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="page-header-user-dropdown">
+                            <div class="p-3 text-center bg-primary">
+                                <img class="img-avatar img-avatar48 img-avatar-thumb"
+                                    src="assets/media/avatars/avatar10.jpg" alt="">
+                            </div>
+                            <div class="p-2">
+                                <h5 class="dropdown-header text-uppercase">User Options</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="be_pages_generic_inbox.html">
+                                    <span>Inbox</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-primary">3</span>
+                                        <i class="si si-envelope-open ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="be_pages_generic_profile.html">
+                                    <span>Profile</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-success">1</span>
+                                        <i class="si si-user ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="javascript:void(0)">
+                                    <span>Settings</span>
+                                    <i class="si si-settings"></i>
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <h5 class="dropdown-header text-uppercase">Actions</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="op_auth_lock.html">
+                                    <span>Lock Account</span>
+                                    <i class="si si-lock ml-1"></i>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                    href="op_auth_signin.html">
+                                    <span>Log Out</span>
+                                    <i class="si si-logout ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END User Dropdown -->
+
+                    <!-- Notifications Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="si si-bell"></i>
+                            <span class="badge badge-primary badge-pill">6</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-2 bg-primary text-center">
+                                <h5 class="dropdown-header text-uppercase text-white">Notifications</h5>
+                            </div>
+                            <ul class="nav-items mb-0">
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">15 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">1 new sale, keep it up</div>
+                                            <small class="text-muted">22 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-times-circle text-danger"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">Update failed, restart server</div>
+                                            <small class="text-muted">26 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">2 new sales, keep it up</div>
+                                            <small class="text-muted">33 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-user-plus text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new subscriber</div>
+                                            <small class="text-muted">41 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">42 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="p-2 border-top">
+                                <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-arrow-down mr-1"></i> Load More..
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Notifications Dropdown -->
+
+                    <!-- Toggle Side Overlay -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+
+                    <!-- END Toggle Side Overlay -->
+                </div>
+                <!-- END Right Section -->
+            </div>
+            <!-- END Header Content -->
+
+            <!-- Header Search -->
+            <div id="page-header-search" class="overlay-header bg-white">
+                <div class="content-header">
+                    <form class="w-100" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <button type="button" class="btn btn-danger" data-toggle="layout"
+                                    data-action="header_search_off">
+                                    <i class="fa fa-fw fa-times-circle"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search or hit ESC.."
+                                id="page-header-search-input" name="page-header-search-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END Header Search -->
+
+            <!-- Header Loader -->
+            <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+            <div id="page-header-loader" class="overlay-header bg-white">
+                <div class="content-header">
+                    <div class="w-100 text-center">
+                        <i class="fa fa-fw fa-circle-notch fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END Header Loader -->
+        </header>
+        <!-- END Header -->
+
+        <!-- Main Container -->
+        <main id="main-container">
+
+            <!-- Hero -->
+            <div class="bg-primary-dark">
+                <div class="content content-full overflow-hidden">
+                    <div class="mt-7 mb-5 text-center">
+                        <h1 class="h2 text-white mb-2 js-appear-enabled animated fadeInDown" data-toggle="appear"
+                            data-class="animated fadeInDown">Liên hệ với chúng tôi</h1>
+                        <h2 class="h4 font-w400 text-white-75 js-appear-enabled animated fadeInDown"
+                            data-toggle="appear" data-class="animated fadeInDown">Nếu có gì khiến bạn không hài lòng hãy
+                            liên hệ với chúng tôi!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white">
+                <div class="content">
+                    <div class="row items-push justify-content-center">
+                        <div class="col-md-10 col-xl-5">
+                            <form action="be_pages_generic_contact.html" method="POST" onsubmit="return false;">
+
+                                <div class="form-group">
+                                    <label for="frontend-contact-email">Họ tên</label>
+                                    <input type="text" class="form-control" id="frontend-contact-name"
+                                        name="frontend-contact-name" placeholder="Enter your Name..">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="frontend-contact-email">Email</label>
+                                    <input type="email" class="form-control" id="frontend-contact-email"
+                                        name="frontend-contact-email" placeholder="Enter your email..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="frontend-contact-subject">Custom Menu</label>
+                                    <select class="custom-select" id="frontend-contact-subject"
+                                        name="frontend-contact-subject" size="1">
+                                        <option value="1">Support</option>
+                                        <option value="2">Billing</option>
+                                        <option value="3">Management</option>
+                                        <option value="4">Feature Request</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="frontend-contact-msg">Nội dung</label>
+                                    <textarea class="form-control" id="frontend-contact-msg" name="frontend-contact-msg"
+                                        rows="7" placeholder="Enter your message.."></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-paper-plane mr-1"></i> Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8130.528858257073!2d105.83599685449828!3d21.012037165234368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8ee6df247f%3A0xe6183d662696d2e9!2zQ8O0bmcgdmnDqm4gVGjhu5FuZyBOaOG6pXQ!5e0!3m2!1svi!2s!4v1563338129914!5m2!1svi!2s"
+                 height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- END Hero -->
+
+            <!-- Page Content -->
+
+            <!-- END Page Content -->
+
+        </main>
+        <!-- END Main Container -->
+
+        <!-- Footer -->
+        <footer id="page-footer" class="bg-body-light">
+                <div class="content py-3">
+                    <div class="row font-size-sm">
+                        <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
+                            Xây dựng <i class="fa fa-heart text-danger"></i> bởi <a class="font-w600"
+                                href="https://1.envato.market/ydb" target="_blank">Team7</a>
+                        </div>
+                        <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
+                            <a class="font-w600" href="#" target="_blank">IceCream</a> &copy; <span
+                                data-toggle="year-copy"></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- END Footer -->
+
+        
+    </div>
+    <!-- END Page Container -->
+
+    
+    <script src="assets/js/oneui.core.min.js"></script>
+
+    
+    <script src="assets/js/oneui.app.min.js"></script>
+    <script src="assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
+    <script src="assets/js/pages/be_pages_dashboard.min.js"></script>
+    <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script>jQuery(function () { One.helpers('slick'); });</script>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
